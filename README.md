@@ -1,8 +1,8 @@
-# Crawler
+# 🕷 Crawler
 
 [![Build Status](https://travis-ci.org/bedekelly/crawler.svg?branch=master)](https://travis-ci.org/bedekelly/crawler)
 
-Crawler is a simple (but effective!) web crawler written in Python. It 
+🕷 Crawler is a simple (but effective!) web crawler written in Python. It 
 outputs a flat dictionary which shows each page crawled, along with the 
 static assets (e.g. images) found and the links between pages.
 
