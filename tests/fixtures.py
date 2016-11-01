@@ -107,5 +107,15 @@ MOCK_GET_DATA = {
                 <a href="https://bad-domain.has-bad-url.com">Click me!</a>
             </body>
         </html>
-    """
+    """,
+
+    # These websites form a long chain of links.
+    "https://deep-chain.com": '<a href="https://1.deep-chain.com"></a>',
+    "https://1.deep-chain.com": '<a href="https://2.deep-chain.com"></a>',
+    "https://2.deep-chain.com": '<a href="https://3.deep-chain.com"></a>',
+    "https://3.deep-chain.com": '<a href="https://4.deep-chain.com"></a>',
+    "https://4.deep-chain.com": '<a href="https://5.deep-chain.com"></a>',
+    "https://5.deep-chain.com": '<a href="https://6.deep-chain.com"></a>',
+    "https://6.deep-chain.com": '<a href="https://7.deep-chain.com"></a>',
+
 }

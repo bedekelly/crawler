@@ -91,3 +91,13 @@ class TestCrawler(unittest.TestCase):
         self.assertEqual(
             result, EXPECTED_CRAWL_RESULTS["https://has-bad-url.com"]
         )
+
+    @patch("requests.get", mock_requests_get)
+    def test_max_depth(self):
+        """
+        Check that when we're parsing a webpage with links to pages containing
+        more links (and so on), we stop after (and only after) a given depth.
+        """
+        result = crawl("https://deep-chain.com", max_depth=4)
+        self.assertIn("https://4.deep-chain.com", result)
+        self.assertNotIn("https://5.deep-chain.com", result)
