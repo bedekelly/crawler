@@ -7,9 +7,8 @@ testing_tools.py:
     unit-test.
 """
 
-from unittest.mock import MagicMock
-
 import requests
+from unittest.mock import MagicMock
 
 from .fixtures import MOCK_GET_DATA
 
