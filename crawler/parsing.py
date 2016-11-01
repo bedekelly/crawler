@@ -9,6 +9,7 @@ ParsedData = namedtuple("ParsedData", ["links", "images", "scripts"])
 def on_same_domain(url_one, url_two):
     """
     Test whether two URLs are on the same domain.
+
     :param url_one: The first URL.
     :param url_two: The second URL.
     :return boolean: True if the domains match, false otherwise.
@@ -38,6 +39,7 @@ def find_attributes(soup, element, attribute):
     """
     Given a BeautifulSoup `soup` instance, find all the values belonging
     to the given attribute inside the given element type.
+
     :param soup: A BS4 `soup` instance.
     :param element: The element, e.g. "img", to search within.
     :param attribute: The attribute whose value we're querying, e.g. "src".
@@ -53,6 +55,7 @@ def make_absolute(links, base_url):
     """
     Given a list of links (absolute OR relative), and a base URL, return a
     list of absolute URLs.
+
     :param links: A list of links, likely parsed from an HTML document.
     :param base_url: The base URL the links were found at.
     :return: A list of absolute URLS.
@@ -61,6 +64,7 @@ def make_absolute(links, base_url):
     def is_absolute(url):
         """
         Given a link, determine whether it's an absolute URL or not.
+
         :param url: The link whose absoluteness should be tested.
         :return boolean: True if the link is absolute, False otherwise.
         """
@@ -70,6 +74,7 @@ def make_absolute(links, base_url):
         """
         Given a relative link and a base URL, join the two to create an
         absolute link.
+
         :param relative_link: The link, typically to a static asset.
         :param base_link: The base URL this link is used with.
         :return: An absolute URL to the static asset, usable anywhere.

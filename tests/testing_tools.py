@@ -8,6 +8,7 @@ from .fixtures import MOCK_GET_DATA
 def mock_requests_get(url):
     """
     Pretend to fetch the data from a URL, as requests.get does.
+
     :param url: The URL to fetch data from.
     :return: A mocked Requests response.
     """

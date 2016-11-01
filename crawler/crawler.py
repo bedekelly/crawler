@@ -10,6 +10,7 @@ def _crawl(url, sitemap=None, max_depth=2):
     Internal implementation of the `crawl` function. This is separate so
     as not to expose the `sitemap` parameter, which is used for recursion
     and shouldn't ever be manually passed in by the user.
+
     :param max_depth: How many site-links we should follow in this crawl.
     :param url: The URL to crawl.
     :return: A sitemap of the given URL, with static assets and page links.
