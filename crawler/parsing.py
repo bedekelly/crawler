@@ -15,7 +15,9 @@ ParsedData = namedtuple("ParsedData", ["links", "images", "scripts"])
 
 def on_same_domain(url_one, url_two):
     """
-    Test whether two URLs are on the same domain.
+    Test whether two URLs are on the same domain. N.B. that "same domain"
+    here is defined as the same *second-level domain* -- i.e. one.a.com and
+    two.a.com are defined as being on the same domain.
 
     :param url_one: The first URL.
     :param url_two: The second URL.
