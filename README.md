@@ -1,6 +1,8 @@
 # Crawler
 
-Crawler is a simple (but effective!) web crawler written in Python. It outputs a flat dictionary which shows each page crawled, along with the static assets (e.g. images) found and the links between pages.
+Crawler is a simple (but effective!) web crawler written in Python. It 
+outputs a flat dictionary which shows each page crawled, along with the 
+static assets (e.g. images) found and the links between pages.
 
 Key features:
 
@@ -34,3 +36,5 @@ A sample of the output format:
 }
 ```
 
+Tests can be run in the root of this repository with 
+`python -m unittest`.
