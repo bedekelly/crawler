@@ -61,6 +61,7 @@ def crawl(url, max_depth=2):
     Crawl a URL, to return a sitemap limited by domain which includes
     information about which static assets each page may depend on, and
     the links between pages.
+
     :param url: The URL to start crawling with.
     :param max_depth: How many site-links we should follow in this crawl.
     :return: A sitemap in Python dict format.
