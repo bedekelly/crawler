@@ -1,9 +1,10 @@
 import unittest
 from unittest.mock import patch
 
-from .crawler import crawl
-from .fixtures import EXPECTED_CRAWL_RESULTS
+from crawler import crawl
+
 from .testing_tools import mock_requests_get
+from .fixtures import EXPECTED_CRAWL_RESULTS
 
 
 class TestCrawler(unittest.TestCase):

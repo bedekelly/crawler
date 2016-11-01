@@ -1,6 +1,6 @@
 import unittest
 
-from .parsing import on_same_domain
+from crawler.parsing import on_same_domain
 
 
 class TestParsing(unittest.TestCase):
