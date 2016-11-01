@@ -39,4 +39,4 @@ A sample of the output format:
 ```
 
 Tests can be run in the root of this repository with 
-`python -m unittest`.
+`python -m nose`.
