@@ -1,3 +1,9 @@
+"""
+fixtures.py:
+    Borrowing from the Django school of testing, fixtures.py contains
+    a bunch of test data that would otherwise have to be inline.
+"""
+
 EXPECTED_CRAWL_RESULTS = {
     "https://basic-website.com": {
         "https://basic-website.com": {

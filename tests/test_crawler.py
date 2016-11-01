@@ -1,3 +1,10 @@
+"""
+test_crawler:
+    Test the functionality of the crawler itself. These tests
+    tend to be fairly end-to-end, mocking out services like
+    requests.get where necessary.
+"""
+
 import unittest
 from unittest.mock import patch
 

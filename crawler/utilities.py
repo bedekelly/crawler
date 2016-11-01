@@ -1,3 +1,10 @@
+"""
+utilities.py:
+    The ubiquitous "utilities.py" -- also known as "utils.py" -- the last
+    resort of the programmer who can't decide where to put a helper function.
+"""
+
+
 def add_to_sitemap(sitemap, url, data):
     """
     Given a wrapped-up set of parsed data from a webpage, add it all to a

@@ -1,3 +1,10 @@
+"""
+networking.py:
+    Currently contains the single function needed to retrieve raw HTML
+    data from a given URL. In future, this may be extended for interaction
+    with non-local caches, for example.
+"""
+
 import requests
 from .caching import cache
 

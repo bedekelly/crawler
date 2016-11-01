@@ -1,3 +1,12 @@
+"""
+crawler.py:
+    This module contains much of the business logic to crawl a webpage.
+
+    It delegates to the other Python source files in this package for things
+    like network interaction and parsing HTML data.
+"""
+
+
 import requests.exceptions as exc
 
 from .networking import get_raw_data

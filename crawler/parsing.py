@@ -1,3 +1,10 @@
+"""
+parsing.py:
+    This file contains utilities for parsing HTML text into meaningful
+    attributes. Currently, `parse_data` is the only name used outside
+    of this module (in crawler.py).
+"""
+
 import urllib.parse
 from collections import namedtuple
 

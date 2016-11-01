@@ -1,3 +1,12 @@
+"""
+testing_tools.py:
+    Similar to the ubiquitous "utilities.py", this file should
+    contain miscellaneous tools for testing. Currently, it has
+    the function which mocks the functionality of requests.get
+    so that we don't have to go out over the network for every
+    unit-test.
+"""
+
 from unittest.mock import MagicMock
 
 import requests
